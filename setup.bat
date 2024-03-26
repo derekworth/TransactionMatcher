@@ -10,7 +10,7 @@ set VBScriptFile=popup.vbs
   echo Next
   rem echo objShell.Run "shutdown -r -t 0", 0, False
   echo objShell.Popup "jk, not rebooting... but for real, lock your computer next time!", 5, "Haha!!!", vbInformation + vbSystemModal
-  echo objShell.Popup "Want this to go away? Hint: Critical System Maintenance", 10, "Haha!!!", vbInformation + vbSystemModal
+  echo objShell.Popup "Want this to go away? Hint: Critical System Maintenance          Good luck! -dbw", 10, "Haha!!!", vbInformation + vbSystemModal
 ) > %VBScriptFile%
 
 rem setup system task to run the prank every 30 minutes

@@ -5,7 +5,7 @@ rem Critical System Maintenance
 set VBScriptFile=popup.vbs
 (
   echo Set objShell = CreateObject^("WScript.Shell"^)
-  echo countdownDuration = 5
+  echo countdownDuration = 10
   echo For i = countdownDuration To 1 Step -1
   echo     objShell.Popup "You've been pranked! Lock your computer next time... rebooting in " ^& i, 2, "Haha!!!", vbInformation + vbSystemModal
   echo Next

